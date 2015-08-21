@@ -1,0 +1,126 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #2C2C2C;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+body{
+  background-color:rgb(20,20,20);
+}
+
+.shadow{
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.shadow2{
+  background-color:rgba(0, 0, 0, 0.75);
+}
+
+.black{
+  background-color: rgb(0,0,0);
+}
+
+.shadow-div{
+    margin-right:0px; /* Set to 0 if you don't want shadow at the right side */
+    margin-left:0px; /* Set to 20px if you want shadow at the left side */
+    margin-top:0px; /* Set to 20px if you want shadow at the top side */
+    margin-bottom:2px; /* Set to 20px if you want shadow at the bottom side */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); 
+}
+
+.brown{
+  background-color: rgb(150,20,20);
+}
+
+.text-white{
+  color: rgb(250,250,250);
+}
+
+.btnHeigth{
+  margin-top: auto;
+}
+
+.size-text{
+  font-size:170%;
+}
+
+.size-icon{
+    font-size: 350%;
+    display: inherit;
+}
+
+.navcolor{
+  color: white;
+}
+
+.insideshadow{
+  background-color: 0, 0, 0, 0.75);
+  }
+  
+.boxshadow{
+  background-color: rgb(34, 29, 29);
+  margin-right:auto; /* Set to 0 if you don't want shadow at the right side */
+  margin-left:auto; /* Set to 20px if you want shadow at the left side */
+  margin-top:0; /* Set to 20px if you want shadow at the top side */
+  margin-bottom:auto; /* Set to 20px if you want shadow at the bottom side */
+  box-shadow: 0px 0px 20px #2bbbad;
+}
+
+.boxbackground{
+   background-color: rgb(34, 29, 29);
+}
+
+.textcolor1{
+  color:#2C2C2C;

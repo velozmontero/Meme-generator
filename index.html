@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="css/materialize.css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <title>
+    HTML CANVAS MEME GENERATOR
+	</title>
+</head>
+<body>
+    <h1 class="center">Meme Generator</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col m3">Menu</div>
+            <div id="canvas-conteiner" class="col m7">
+            <canvas id="canvas"></canvas>
+            </div> 
+        </div>
+    </div>
+     
+    <canvas id="canvas"></canvas>
+    
+    <script>
+        var c= document.getElementById("canvas");
+        var cc= document.getElementById("canvas-conteiner");
+        c.width= cc.offsetWidth;
+        c.height= cc.offsetWidth*.7;
+
+        var ctx= c.getContext("2d");    
+        var img= new Image();
+
+        img.onload= function(){
+            var imgHeight =img.height*c.width/img.width;
+            ctx.drawImage(img,0,0,c.width,c.height);
+            drawPath();
+        };
+       img.src= "img/ObamaRaul.jpg";
+        function drawPath(){
+            ctx.beginPath()
+            ctx.fillStyle="rgb(100,100,150)";
+            ctx.moveTo(50,50);
+            ctx.lineTo(75,75);
+            ctx.lineTo(75,50);
+            ctx.lineTo(50,50);
+            ctx.fill();
+        }
+    </script>   
+    
+</body
+</html>    

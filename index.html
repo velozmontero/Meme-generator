@@ -34,8 +34,21 @@
             var imgHeight =img.height*c.width/img.width;
             ctx.drawImage(img,0,0,c.width,c.height);
             drawPath();
+            drawText();
         };
        img.src= "img/ObamaRaul.jpg";
+        
+        function drawText(){
+            ctx.save();    
+            ctx.font= "36px Impact";
+            ctx.fillText("CANVAS MEMES",100,100);
+            ctx.fillStyle= "rgba(255,255,255,0.75)";
+            ctx.strokeText("CANVAS MEMES",100,100);
+            ctx.restore();    
+        }
+            
+        
+        
         function drawPath(){
             ctx.beginPath()
             ctx.fillStyle="rgb(100,100,150)";
